@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "category": "web",
+      "title": "Official Estate of Jean-Michel Basquiat",
+      "url": "http://basquiat.com"
+    },
+    {
+      "id": 2,
+      "category": "web",
+      "title": "MoMA Learning - Basquiat",
+      "url": "https://www.moma.org/learn/moma_learning/jean-michel-basquiat"
+    },
+    {
+      "id": 3,
+      "category": "book",
+      "title": "Radiant Child: The Story of Young Artist Jean-Michel Basquiat",
+      "url": "ISBN: 9780316213882"
+    },
+    {
+      "id": 4,
+      "category": "book",
+      "title": "Jean-Michel Basquiat",
+      "url": "ISBN: 9783836550376"
+    },
+    {
+      "id": 5,
+      "category": "book",
+      "title": "Basquiat: Emmerling",
+      "url": "ISBN: 3-8228-1637-X"
+    },
+    {
+      "id": 6,
+      "category": "book",
+      "title": "Wide Eyed Editions. p. 16.",
+      "url": "ISBN: 978-1-78603-158-7"
+    },
+    {
+      "id": 7,
+      "category": "book",
+      "title": "In the Cipher",
+      "url": "ISBN: 1-85894-287-X"
+    }
+  ]
+  

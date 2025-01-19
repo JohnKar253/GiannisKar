@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jean-Michel Basquiat - SPA</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <h1>Jean-Michel Basquiat</h1>
+    </header>
+
+    <!-- Κεντρικό Μενού (nav) - θα χρησιμοποιήσουμε float στο CSS -->
+    <nav>
+      <ul>
+        <li><a href="#" data-menu="bio">Βιογραφία</a></li>
+        <li><a href="#" data-menu="paintings">Πίνακες</a></li>
+        <li><a href="#" data-menu="exhibitions">Εκθέσεις</a></li>
+        <li><a href="#" data-menu="links">Σύνδεσμοι</a></li>
+        <li><a href="#" data-menu="admin">Διαχείριση</a></li>
+      </ul>
+    </nav>
+
+    <!-- Πλευρικό Μενού (aside) -->
+    <aside>
+      <!-- Υπομενού για Βιογραφία -->
+      <div id="aside-bio" class="hidden">
+        <h3>Ενότητες Βιογραφίας</h3>
+        <ul>
+          <li><a href="#" data-submenu="early-life">Πρώιμα χρόνια</a></li>
+          <li><a href="#" data-submenu="later-life">Ώριμη περίοδος</a></li>
+        </ul>
+      </div>
+
+      <!-- Υπομενού για Πίνακες -->
+      <div id="aside-paintings" class="hidden">
+        <h3>Κατηγορίες Πινάκων</h3>
+        <ul>
+          <li><a href="#" data-submenu="street-art">Street Art</a></li>
+          <li>
+            <a href="#" data-submenu="neoexpressionism">Neo-Expressionism</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Υπομενού για Εκθέσεις -->
+      <div id="aside-exhibitions" class="hidden">
+        <h3>Κατηγορίες Εκθέσεων</h3>
+        <ul>
+          <li><a href="#" data-submenu="exhib-upcoming">Επερχόμενες</a></li>
+          <li><a href="#" data-submenu="exhib-past">Προηγούμενες</a></li>
+        </ul>
+      </div>
+
+      <!-- Υπομενού για Συνδέσμους -->
+      <div id="aside-links" class="hidden">
+        <h3>Κατηγορίες Συνδέσμων</h3>
+        <ul>
+          <li><a href="#" data-submenu="web">Διαδικτυακοί Σύνδεσμοι</a></li>
+          <li><a href="#" data-submenu="book">Βιβλιογραφία</a></li>
+        </ul>
+      </div>
+
+      <!-- Υπομενού για Διαχείριση -->
+      <div id="aside-admin" class="hidden">
+        <h3>Επιλογές Διαχείρισης</h3>
+        <ul>
+          <li><a href="#" data-submenu="login" id="login-link">Σύνδεση</a></li>
+          <li>
+            <a href="#" data-submenu="logout" class="hidden" id="logout-link"
+              >Αποσύνδεση</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              data-submenu="manage-exhibitions"
+              class="hidden"
+              id="manage-exhibitions-link"
+              >Διαχείριση Εκθέσεων</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              data-submenu="manage-links"
+              class="hidden"
+              id="manage-links-link"
+              >Διαχείριση Συνδέσμων</a
+            >
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Κύριο Περιεχόμενο (main) -->
+    <main id="main-content">
+      <h2>Καλώς ήλθατε στη σελίδα του Ζαν Μισέλ Μπασκιά</h2>
+      <p>
+        Παρακαλούμε επιλέξτε μια ενότητα από το μενού παραπάνω για να
+        περιηγηθείτε.
+      </p>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2024 - 2025 Δημιουργήθηκε για το μάθημα ΤΕΧΝΟΛΟΓΙΕΣ ΔΙΑΔΙΚΤΥΟΥ -
+        (ΤΕΧΝΟΛΟΓΙΕΣ WWW)
+      </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

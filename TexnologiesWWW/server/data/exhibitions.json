@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Basquiat: Boom for Real",
+    "location": "Barbican Art Gallery, London",
+    "dateStart": "2017-09-21",
+    "dateEnd": "2018-01-28"
+  },
+  {
+    "id": 2,
+    "title": "Jean-Michel Basquiat Retrospective",
+    "location": "Fondation Louis Vuitton, Paris",
+    "dateStart": "2018-05-01",
+    "dateEnd": "2018-09-15"
+  }
+]

@@ -1,0 +1,140 @@
+/* public/css/styles.css */
+
+/* Αρχικοποίηση */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: grid;
+    /* Grid Template:
+     * row1: header
+     * row2: nav
+     * row3: aside + main
+     * row4: footer
+     */
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "aside main"
+      "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto auto 1fr auto;
+  }
+  
+  /* Header */
+  header {
+    grid-area: header;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Nav (με χρήση float για τα li) */
+  nav {
+    grid-area: nav;
+    background-color: #aaa;
+    padding: 0.5rem 1rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    float: left;
+    margin-right: 1rem;
+  }
+  
+  nav::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 4px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #888;
+    color: #fff;
+  }
+  
+  /* Aside */
+  aside {
+    grid-area: aside;
+    background-color: #eee;
+    padding: 1rem;
+  }
+  
+  /* Main */
+  main {
+    grid-area: main;
+    padding: 1rem;
+    background-color: #f8f8f8;
+  }
+  
+  /* Footer */
+  footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Απόκρυψη στοιχείων (π.χ. στις περιπτώσεις SPA) */
+  .hidden {
+    display: none;
+  }
+  
+  /* Painting Container: Κάθετη στοίχιση (column) */
+  .paintings-container {
+    display: flex;
+    flex-direction: column; /* Τα elements σε μία στήλη */
+    gap: 1rem;             /* Απόσταση μεταξύ τους */
+  }
+  
+  /* Κάθε painting-card έχει συγκεκριμένο πλάτος και κέντρο κειμένου */
+  .painting-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;       /* Σταθερό πλάτος */
+    text-align: center;
+  }
+  
+  /* Κάνουμε την εικόνα να προσαρμόζεται σε πλάτος 100% του container */
+  .painting-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive Media Query */
+  @media (max-width: 768px) {
+    body {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer";
+    }
+    aside {
+      order: 2;
+    }
+    main {
+      order: 1;
+    }
+  }
+  
